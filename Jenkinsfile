@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { // (2)
             agent {
                 docker {
-                    image 'docker-api' // (3)
+                    image 'python' // (3)
                 }
             }
             steps {
