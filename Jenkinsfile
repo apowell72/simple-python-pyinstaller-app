@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { // (2)
             agent {
                 docker {
-                    image 'python:3-alpine' // (3)
+                    image 'mcr.microsoft.com/windows:1809' // (3)
                 }
             }
             steps {
