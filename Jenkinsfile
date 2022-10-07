@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { // (2)
             agent {
                 docker {
-                    image 'mcr.microsoft.com/windows:1809' // (3)
+                    image 'docker-api' // (3)
                 }
             }
             steps {
