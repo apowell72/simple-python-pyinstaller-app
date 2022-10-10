@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     registryUrl 'atas-docker.atas.gtri.org'
-                    image 'atas-docker.atas.gtri.org/hraps-docs-dev' // (3)
+                    image 'hraps-docs-dev' // (3)
                 }
             }
             steps {
