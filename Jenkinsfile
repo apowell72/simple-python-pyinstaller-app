@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { // (2)
             agent {
                 docker {
+                    registryUrl 'atas-docker.atas.gtri.org'
                     image 'atas-docker.atas.gtri.org/hraps-docs-dev' // (3)
                 }
             }
