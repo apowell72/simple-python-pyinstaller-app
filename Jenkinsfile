@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { // (2)
             agent {
                 docker {
-                    image 'python:2-alpine' // (3)
+                    image 'atas-docker.atas.gtri.org/hraps-docs-dev' // (3)
                 }
             }
             steps {
